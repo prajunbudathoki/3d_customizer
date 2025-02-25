@@ -3,8 +3,50 @@
 html {
   font-family: "Inter", sans-serif;
 }
+/* body{
+  background: #fae5e5;
+} */
 
 .head-text {
-  @apply xl:text-[8rem] text-[3.5rem] xl:leading-[1.1rem] leading-[4.5rem] font-black text-black;
+  font-size: 3.5rem; /* Default size */
+  line-height: 4.5rem; /* Default line height */
+  font-weight: 900; /* Equivalent to font-black */
+  color: black; /* Text color */
+
+  /* Styles for extra-large screens (xl) */
+  @media (min-width: 1280px) { 
+    font-size: 8rem; /* Equivalent to xl:text-[8rem] */
+    line-height: 1.1rem; /* Equivalent to xl:leading-[1.1rem] */
+  }
+}
+
+
+.editortabs-container {
+  background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+  backdrop-filter: blur(10px); /* Blur effect */
+  width: 64px; /* Equivalent to w-16 (16 * 4px) */
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Border with transparency */
+  border-radius: 8px; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 4px; /* Equivalent to ml-1 (1 * 4px) */
+  padding-top: 16px; /* Equivalent to py-4 (4 * 4px) */
+  padding-bottom: 16px;
+  gap: 16px; /* Equivalent to gap-4 (4 * 4px) */
+}
+.filtertabs-container {
+  position: absolute;
+  z-index: 10;
+  bottom: 20px; /* Equivalent to bottom-5 (5 * 4px) */
+  right: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px; /* Equivalent to gap-4 (4 * 4px) */
 }
 

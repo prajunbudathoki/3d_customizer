@@ -7,8 +7,8 @@ const App = () => {
   return (
     <main className='all transition-all ease-in'>
       <Home />
-      {/* <Customizer />
-      <Canvas /> */}
+      <Customizer />
+      {/* <Canvas /> */}
     </main>
   )
 }
