@@ -8,7 +8,7 @@ const App = () => {
     <main className='all transition-all ease-in'>
       <Home />
       <Customizer />
-      {/* <Canvas /> */}
+      <Canvas />
     </main>
   )
 }

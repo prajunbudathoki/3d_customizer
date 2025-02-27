@@ -13,7 +13,6 @@ import Tab from '../components/Tab'
 import Button from '../components/Button'
 import KeyboardBackspaceIcon from '@mui/icons-material/KeyboardBackspace';
 
-
 const Customizer = () => {
   const snap = useSnapshot(state)
   return (
